@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% ;
+  grid-template-rows: repeat(10, 10em [row-start]);
+  grid-template-areas:
+    "header header header header"
+    "main main . side"
+    "footer footer footer footer"
+}
+
+.item-header {
+  background-color: red;
+  grid-area: header;
+}
+
+.item-main {
+  background-color: green;
+  grid-area: main;
+}
+
+.item-side {
+  background-color: yellow;
+  grid-area: side;
+}
+
+.item-footer {
+  background-color: blue;
+  grid-area: footer;
+}
